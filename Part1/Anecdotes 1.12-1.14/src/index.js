@@ -32,7 +32,6 @@ function mostVotes(votes){
 }
 
 var points = Array(anecdotes.length).fill(0)
-const copy = [...points]
 
 const App = (props) => {
   var [selected, setSelected] = useState(0) // random selection
@@ -44,6 +43,7 @@ const App = (props) => {
       <Display text={anecdotes[selected]}/>
       <Display text={['has ', points[selected] ,' votes']}/>
       <Button handleClick={() => {
+          const copy = [...points]
           votes = copy[selected]
           setVotes(votes += 1)
           copy[selected] = votes
