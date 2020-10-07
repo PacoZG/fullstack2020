@@ -19,7 +19,7 @@ const Button = (props) => (
 </button>  
 )
 
-var mostVotes = (votes) => {
+function mostVotes(votes){
   var grade = votes[0]
   var index = 0
   for (var i = 1; i < votes.length; i++){
