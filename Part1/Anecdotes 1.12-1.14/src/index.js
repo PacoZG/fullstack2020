@@ -23,14 +23,13 @@ var mostVotes = (votes) => {
   var grade = votes[0]
   var index = 0
   for (var i = 1; i < votes.length; i++){
-    if (grade < votes[i]){
+    if (votes[i] > grade ){
       grade = votes[i]
       index = i
     }
   }
   return index
 }
-  
 
 var points = Array(anecdotes.length).fill(0)
 const copy = [...points]
