@@ -1,0 +1,36 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+
+var humans = [
+  {name: 'paco', mood: 'grumpy'},
+  {name: 'jane', mood: 'bitchy'},
+  {name: 'samu', mood: 'pobrecito'},
+  {name: 'triinu', mood: 'high'},
+  {name: 'sami', mood: 'drunk'},
+  {name: 'carlos', mood: 'grumpy'},
+  {name: 'mimo', mood: 'sleepy'}
+]
+
+var grumpies = humans.filter(human => human.mood === 'grumpy')
+
+var grumpyNames = grumpies.map(human => human.name)
+
+
+console.log(grumpies)
+console.log(grumpyNames);
+
+
+var money = [{amount: 250}, {amount: 400}, {amount: 100}, {amount: 325}]
+
+var total = money.reduce ((sum, amount) => sum += amount.amount, 0)
+console.log(total)
+/*var names = humans.map(human => human.name)
+var moods = humans.map(human => human.mood)
+
+console.log(names)
+console.log(moods)*/
+
+ReactDOM.render(<App />, document.getElementById('root'))
