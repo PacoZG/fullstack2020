@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = (props) => <h2 key={props.key}>{props.course}</h2>
+const Header = (props) => <h2 key={props.id}>{props.name}</h2>
 
 const Parts = (props) => {
     return (
@@ -25,10 +25,10 @@ const Courses = (props) => {
     return(
       <div>
         <h1>Web development curriculum</h1>
-        <Header course={courses[0].name} />
+        <Header id={courses[0].id} name={courses[0].name} />
         <Parts parts={courses[0].parts} />
         <Total parts={courses[0].parts} />
-        <Header course={courses[1].name} />
+        <Header id={courses[1].id} name={courses[1].name} />
         <Parts parts={courses[1].parts} />
         <Total parts={courses[1].parts} />
       </div>
