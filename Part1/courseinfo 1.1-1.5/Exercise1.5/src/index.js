@@ -20,6 +20,17 @@ const Course = (props) => {
   )
 }
 
+const Content = (props) => {
+  const { parts } = props
+  return (
+    <div>
+      <p>{parts[0].name} {parts[0].exercises}</p>
+      <p>{parts[1].name} {parts[1].exercises}</p>
+      <p>{parts[2].name} {parts[2].exercises}</p>
+    </div>
+  )
+}
+
 const App = () => {
   const course = 'Half Stack application development'
   const parts = [
@@ -40,9 +51,7 @@ const App = () => {
   return (
     <div>
       <Course course={course} />
-      <p>{parts[0].name} {parts[0].exercises}</p>
-      <p>{parts[1].name} {parts[1].exercises}</p>
-      <p>{parts[2].name} {parts[2].exercises}</p>
+      <Content parts={parts} />
       <Total parts={parts} />
     </div>      
     )  
