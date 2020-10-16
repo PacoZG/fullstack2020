@@ -2,11 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 const Total = (props) => {
-  const parts = props.parts
-  console.log(props)
+  const { parts } = props
+  
   return (
     <div>
-      
+      <p>Number of exercises {parts[0].exercises + parts[1].exercises + parts[2].exercises}</p>
+    </div>
+  )
+}
+
+const Course = (props) => {
+  const { course } = props
+  return (
+    <div>
+      <h1> {course} </h1>
     </div>
   )
 }
@@ -30,11 +39,11 @@ const App = () => {
 
   return (
     <div>
-      <h1>{course}</h1>
+      <Course course={course} />
       <p>{parts[0].name} {parts[0].exercises}</p>
       <p>{parts[1].name} {parts[1].exercises}</p>
       <p>{parts[2].name} {parts[2].exercises}</p>
-      <p>Number of exercises {parts[0].exercises + parts[1].exercises + parts[2].exercises}</p>
+      <Total parts={parts} />
     </div>      
     )  
 }
