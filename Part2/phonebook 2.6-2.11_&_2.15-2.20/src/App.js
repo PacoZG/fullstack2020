@@ -109,7 +109,7 @@ const App = () => {
       setColorClass("nameAdded")
       setTimeout(() => {
         setMessage(null)
-      }, 2000)
+      }, 5000)
     })
     }
   }
