@@ -1,0 +1,50 @@
+.labelStyle {
+  background-color: tomato;
+  padding: 10px 20px;
+  font-weight: bolder;
+  color:black;
+  font-size: 20px;
+}
+.nameStyle{
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  color:#102e20;
+  font-size: 20px;
+}
+
+.headerStyle{
+  background-color: darkorange;
+  padding: 15px 25px;
+  color:rebeccapurple;
+  font-style: serif;
+  font-size: 30px;
+}
+
+.textStyle {
+  padding: 10px 20px;
+  font-weight: bolder;
+  color:black;
+  font-size: 20px;
+}
+
+.subheaderStyle {
+  background-color: khaki;
+  padding: 15px 25px;
+  color:rebeccapurple;
+  font-style: serif;
+  font-size: 30px;
+}
+
+.image {
+  padding: 2px 2px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: hsl(76, 18%, 12%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #999;
+}
