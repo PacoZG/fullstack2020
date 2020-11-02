@@ -1,0 +1,83 @@
+.nameAdded {
+  color: green;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.numberChanged {
+  color: green;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.nameRemoved {
+  color: orange;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 5px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #584d38;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.labelStyle {
+  background-color: tomato;
+  padding: 10px 20px;
+  font-weight: bolder;
+  color:black;
+  font-size: 20px;
+}
+.nameStyle{
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  color:#102e20;
+  font-size: 20px;
+}
+
+.headerStyle{
+  background-color: darkorange;
+  padding: 15px 25px;
+  color:rebeccapurple;
+  font-style: serif;
+  font-size: 30px;
+}
