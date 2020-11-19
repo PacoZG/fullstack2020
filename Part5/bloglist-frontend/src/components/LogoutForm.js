@@ -8,7 +8,7 @@ const LogoutForm = (props) => {
         <tbody >
           <tr>
             <td >{`${user.name} has logged in`}</td>
-            <td ><button className={ 'logoutButton' } type="submit">{ 'logout' }</button></td>
+            <td ><button id="logout-button" className={ 'logoutButton' } type="submit">{ 'logout' }</button></td>
           </tr>
         </tbody>
       </table>

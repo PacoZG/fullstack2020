@@ -87,10 +87,6 @@ const App = () => {
         setBlogs(blogs.concat(returnBlog))
         actionMessage(`a new blog posted: ${blogObject.title} by ${blogObject.author}`, 'success')
       })
-      .catch(error => {
-        actionMessage(error.response.data.error, 'error')
-        console.log(error.response.data.error)
-      })
   }
 
   const deleteBlog = async (blog) => {

@@ -10,6 +10,7 @@ const LoginForm = (props) => {
           <tr >
             <td>{'username'}</td>
             <td><input
+              id='username'
               type="text"
               value={username}
               name="Username"
@@ -19,6 +20,7 @@ const LoginForm = (props) => {
           <tr >
             <td>{'password'}</td>
             <td><input
+              id='password'
               type="password"
               value={password}
               name="Password"
@@ -27,7 +29,7 @@ const LoginForm = (props) => {
           </tr>
         </tbody>
       </table>
-      <button className={'button'} type="submit">{'login'}</button>
+      <button id="login-button" className={'button'} type="submit">{'login'}</button>
     </form>
   )
 }
